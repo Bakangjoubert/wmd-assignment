@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WarnerBros.com | Home WB Movies, TV, Games & more.</title>
+		<style>
+		    body{	
+				font-family: san-serif;
+				background-image: linear-gradient(rgba(0,0,0,0,9),rgba(0,0,0,0,9)),url('C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 160325.png');
+				background-repeat: repeat-x;
+				background-position: center;
+				background-size: cover;
+				
+				height: 130px;
+				background-color: black;
+			    
+			
+			}
+			
+		header{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 100px;
+				width: 100%;
+		
+		}	
+		
+		.logo{
+			   margin-left: 7px;
+			   margin-top: -2x;
+		}
+		.logo img{
+					height: 50px;
+					background-color: white;
+					
+		}
+		
+		ul{
+			display: flex;
+			
+		}
+
+		li{
+				display: inline;
+				list-style-type: none;
+				padding: 0 10px;
+				font-weight:bolder;
+				
+			}
+			
+		a{
+			text-decoration: none;
+			padding: 0px 20px;
+			color: white;
+		}	
+		a:hover{
+				color: teal;
+				font-weight: bolder;
+		}
+		.user{
+			  cursor: pointer;
+			  color: teal;
+			  margin-top: 10px;
+			  margin-right: -105px;
+		
+		}	
+		.user a{
+				text-decoration: none;
+				color: white;
+				background-color: teal;
+				border-radius: 10px;
+				padding: 10px 30px;
+		}
+		.user a:hover{ 
+					   background-color: black;
+					   color: teal;
+					   font-weight: bolder;
+		}
+		.user i{
+				font-size: 20px;
+				margin-right: 10px;
+				padding: 0px 14px;
+		}
+		.blackadam{
+					position: absolute;
+					color: white;
+					margin-top: 100px;
+					margin-left: 100px;
+					
+		}
+		.inside-blackadam{
+						   line-height: 1.2;
+		}
+		.inside-blackadam h1{
+							 font-size: 40px;
+		}
+		.inside-blackadam p{
+							 font-size: 17px;
+		}
+		span{
+			 color: teal;
+			 font-weight: bold;
+			 
+		}
+		.line1{
+			  height: 2px;
+			  color: teal;
+			  width: 12%;
+			  margin-left: 0px;
+			  margin-top: 0px;
+			  position: absolute;
+		}
+		.poster{
+				margin-top: 130px;
+				margin-right: 150px;
+		}
+		.poster img{
+					height: 420px;
+					float: right;
+					border-radius: 10px;	
+					
+		}
+		.btn1{
+			  margin-top: 30px;
+			  
+		}
+		.btn1 a{
+				  text-decoration: none;
+				  color: white;
+				  padding: 10px 25px;
+				  background-color: teal;
+				  border-radius: 20px;
+		}
+		.btn1 a:hover{
+						background: black;
+						color: teal;
+		}
+		.btn1 i{
+				color: black;
+				padding: 0px 10px;
+		}
+			
+		html{
+			scroll-behaviour: smooth;
+		}	
+		.latest-movies{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						margin-top: 500px;
+						padding: 0px 20px;
+		}
+		.latest-movies h1{
+							font-size: 20px;
+							color: teal;
+		}
+		.latest-container{
+							padding: 10px 0px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							margin-top: 30px;
+		}
+		.latest-inside img{
+							height: 250px;
+							padding: 4px;
+							cursor: pointer;
+							border-radius: 10px;
+							transition: all 500ms ease-in-out;
+		}
+		.heading1{
+					color: white;
+					line-height: 1.5;
+		}
+		.heading1 h4{
+						font-size: 15px;
+						
+		}
+		.heading1 h6{
+						font-size: 12px;
+		}
+		.latest-inside img:hover{
+									transform: scale(1.2);
+									
+		}
+		.btn2{
+				margin-top: -30px;
+				margin-left: 150px;
+		}
+		.btn2 a{
+				text-decoration: none;
+				font-size: 13px;
+				background: teal;
+				border-radius: 10%;
+				color: white;
+				
+		}	
+		.Movies{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				padding: 0px 20px;
+				color: white;
+				margin-top: 850px;
+		
+		}
+		.Movies-container{
+							margin-top: 30px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+		}
+		.Movies-inside h3{
+							font-size: 15px;
+							font-weight: 500;
+							margin-top: 6px;
+		}
+		.Movies-inside img{
+							height: 250px;
+							border-radius: 10px;
+							transition: all 500ms ease-in-out;
+							
+		}
+		.Movies-inside img:hover{
+									transform: scale(1.1);
+									cursor: pointer;
+		}
+		.Movies h1{
+					font-size: 20px;
+					color: teal;
+		}
+		.imdb{
+				background: teal;
+				border-radius: 20px;
+				position: absolute;
+				padding: 10px 10px;
+				color: white;
+				margin-top: -80px;
+				margin-left: 120px;
+				font-weight: bolder;
+		}
+		
+		.more a{
+				color: teal;
+				font-weight: bolder;
+				text-decoration: none;
+				
+		}
+		.emtee{
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				color: white;
+				margin-top: 2100px;
+		}
+		.yt-movies{
+					padding: 10px 170px;
+					line-height; 1.9;
+		}
+		.yt-movies h1{
+						color: teal;
+						
+		}
+		.yt-movies p{
+					font-size: 25px;
+		}
+		.line{
+				height: 2px;
+				background: white;
+				width: 7%;
+				margin-left: 170px;
+				position: absolute;
+		}
+		.yt-container{
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+		}
+		.inside-yt img{
+						
+						height: 350px;
+						border-top-right-radius: 100px;
+						border-top-left-radius: 100px;
+						
+		}
+		.heading2 p{
+					font-size: 15px;
+		}
+		.like{
+				font-size: 15px;
+				float: right;
+				margin-top: -50px;
+		}
+		.youtubebtn{
+					position: absolute;
+					height: 30%
+					width: 100%;
+					margin-top: 2700px;
+					text-align: center;
+					border-radius: 4px;
+		}
+		.youtubebtn a{
+						text-decoration: none;
+						padding: 10px 30px;
+						background: teal;
+						color: black;
+						font-weight: 700;
+		}
+		.footer{
+				position: absolute;
+				margin-top: 1500px;
+				color: white;
+				
+				
+		}
+		.logopart img{
+						height: 7vh;
+					margin-top: 3px;
+				
+					background: white;
+		}
+		.logopart h1{
+						color: teal;
+						font-size: 25px;
+						margin-top: 3000px;
+						margin-left: 70px;
+						
+						
+		}
+		
+		.copyright p{
+					font-size: 15px;
+					margin-top: 30px;
+					font-weight: 500;
+					color: white;
+		}
+
+
+
+
+		</style>	
+	
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+			   <img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 160655.png" width=45 height=45>
+			</div>
+			
+			<div class="nav">
+				<ul>
+					<li><a href="movies.html">Movies</a></li>
+					<li><a href="tvshows.html">Tv Shows</a></li>
+					<li><a href="games.html">Games & Apps</a></li>
+					<li><a href="collections.html">Collections</a></li>
+					<li><a href="feedback.html">Feedback</a></li>
+				</ul>
+			</div>	
+			<div class="user">
+				<i class="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 160902.png" width=45 height=45></i>
+				<a href="login.html">LogIn</a>
+				
+			</div>	
+			<div class="container">
+			        <form action="movies.html">
+					<input type="text" placeholder="search" name="q">
+					<button type="submit"></button>
+				   </form>
+
+		    </div>	
+		
+		</header>
+			<section>
+				<div class="blackadam">
+				 <div class="inside-blackadam">
+				    <span>NOW STREAMING</span>
+				  <div class="line1"></div>
+				  <h1>BLACK ADAM</h1>
+				  <p>Action | Adventure | 2023</p>
+				  <div class="btn1">
+					<a href="https://www.youtube.com/watch?v=X0tOpBuYasI"><i class="fas fa-play-button"></i>WATCH NOW</a>
+					<a href=""><i class="fas fa-heart vector icon_"></i>WATCH LATER</a> 
+				</div>
+				</div>
+				</div>
+				
+				<div class="poster">
+				   <img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 160325.png" alt="">
+				   <img src="" alt="">
+				   
+				  </div> 
+		  
+		    </section>
+			
+		<div class="latest-movies" id="Movies">
+			<h1>TRENDING ON WARNER BROS</h1>	
+			<div class="latest-container">
+			<div class="latest-inside">
+				<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 161023.png" alt="">
+			<div class="heading1">
+				<h4>Lucifer</h4>
+				<p><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+				<h6>Action</h6>
+			</div>
+			<div class="btn2">
+				<a href="https://www.youtube.com/watch?v=X4bF_quwNtw">WATCH</a>
+		</div>	
+		<div class="latest-inside">
+				<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 161327.png" alt="">
+			<div class="heading1">
+				<h4>Johnny</h4>
+				<p><span>&#9733;&#9733;&#9733;&#9733;&#9734;</span></p>
+				<h6>Romance</h6>
+			</div>
+			<div class="btn2">
+				<a href="https://www.youtube.com/watch?v=zAtgTpO-724">WATCH</a>
+		</div>	
+		<div class="latest-inside">
+				<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 161436.png" alt="">
+			<div class="heading1">
+				<h4>Creed 3</h4>
+				<p><span>&#9733;&#9733;&#9733;&#9734;&#9734;</span></p>
+				<h6>Action</h6>
+			</div>
+			<div class="btn2">
+				<a href="https://www.youtube.com/watch?v=pOOCJR6IOd8">WATCH</a>
+		</div>	
+			<section>
+				<div class="Movies">
+				<h1>ACTION</h1>
+				<div class="Movies-container">
+				<div class="Movies-inside">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 161436.png" alt="">
+					<h3>RUSH HOUR</h3>
+				<div class="imdb">
+					<p>9.8</p>
+				</div>	
+					<div class="Movies-inside">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 162207.png" alt="">
+					<h3>GI JOE 3D</h3>
+				<div class="imdb">
+					<p>8.5</p>
+				</div>	
+					<div class="Movies-inside">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 162326.png" alt="">
+					<h3>FAST & FURIOUS 8</h3>
+				<div class="imdb">
+					<p>9.4</p>
+				</div>	
+				<div class="more">
+					<a href="https://www.youtube.com/">VIEW MORE</a>
+				</div>	
+			</section>
+			
+			<section class="emtee">
+				<div class="line"></div>
+				<div class="yt-movies">
+					<h1>YOUTUBE MOVIES</h1>
+					<p>BLOCKBUSTER OF THE MONTH</p>
+				<div class="yt-container">
+				<div class="inside-yt">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 162448.png" alt="">
+				<div class="heading2">
+					<p>ASPIRANTS</p>
+					<p><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+					<div class="like">
+						<span><i class="fas fa-thumbs-up">200K</i></span>
+						<p>2021</p>
+						<p></p>
+					</div>	
+
+				</div>
+				</div>
+				<div class="inside-yt">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 162549.png" alt="">
+				<div class="heading2">
+					<p>KOTA FACTORY</p>
+					<p><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+					<div class="like">
+						<span><i class="fas fa-thumbs-up">50K</i></span>
+						<p>2018</p>
+						<p></p>
+					</div>	
+
+				</div>
+				</div>
+				<div class="inside-yt">
+					<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 162650.png" alt="">
+				<div class="heading2">
+					<p>MR BEAN</p>
+					<p><span>&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+					<div class="like">
+						<span><i class="fas fa-thumbs-up">150M</i></span>
+						<p>2016</p>
+						<p></p>
+					</div>	
+
+				</div>
+				</div>
+				</div>
+				</div>	
+				
+			
+			</section>
+			<div class="youtubebtn">
+				<a href="https://www.youtube.com/">WATCH MORE<i class="C:\Users\cse22-047\Downloads\icons8-youtube-48.png"></i></a>
+			</div>	
+		
+		
+		<footer>
+			
+					
+						<div class="logopart">
+							<h1>WarnerBros</h1>
+							<img src="C:\Users\cse22-047\Pictures\Screenshots\Screenshot 2024-04-29 160655.png" width=45 height=45">
+					    </div>
+						
+						<div class="copyright">
+						<p>TM & &copy 2023 WarnerBros.Entertainment Inc All rights reserved.</p>
+						</div>
+						
+		
+		</footer>
+	
+	</body>
+
+
+</html>
